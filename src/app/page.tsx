@@ -1,3 +1,4 @@
+'use client'
 import Coretrack from "./Components/widgets/Coretrack"
 import Data from "./Components/widgets/Data"
 import Footer from "./Components/widgets/Footer"
@@ -8,9 +9,15 @@ import Design01 from "./Components/widgets/Design01"
 import Remote02 from "./Components/widgets/Remote02"
 import Easy_process from "./Components/widgets/Easy_process"
 import Small_track from "./Components/widgets/Small_track"
+import { useEffect } from 'react'
+import { initHotjar } from "./Components/Hotjar"
 
 
 const page = () => {
+
+  useEffect(() => {
+    initHotjar();
+  }, []);
   return (
     
     <div  className=""  >
