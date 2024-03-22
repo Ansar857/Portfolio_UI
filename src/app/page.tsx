@@ -1,3 +1,4 @@
+'use client'
 import Coretrack from "./Components/widgets/Coretrack"
 import Data from "./Components/widgets/Data"
 import Footer from "./Components/widgets/Footer"
