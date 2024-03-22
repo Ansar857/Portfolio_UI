@@ -33,7 +33,7 @@ const Page = () => {
       <Team_profiles/>
       <Data/>
       <Footer/>
-      
+    
 
     </div>
   )
