@@ -3,5 +3,5 @@
 import { hotjar } from 'react-hotjar';
 
 export const initHotjar = () => {
-  hotjar.initialize(3917488, 6);
+  hotjar.initialize(3917801, 6);
 };
