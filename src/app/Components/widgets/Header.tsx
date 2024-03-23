@@ -31,9 +31,9 @@ const Header = () => {
         </div></div>
 
         <div className="hidden sm:block sm:ml-6">
-          <a href="/" className="bg-slate-200 text-black px-3 py-2 rounded-md text-sm font-medium">Dashboard</a>
-          <a href="#" className="text-white  hover:bg-blue-500 px-3 mx-2 py-2 rounded-md text-sm font-medium">Work</a>
-          <a href="#" className="text-white  hover:bg-blue-500 px-3 py-2 rounded-md text-sm font-medium">Services</a>
+          <a href="/Test" className="bg-slate-200 text-black px-3 py-2 rounded-md text-sm font-medium">Dashboard</a>
+          <a href="/" className="text-white  hover:bg-blue-500 px-3 mx-2 py-2 rounded-md text-sm font-medium">Work</a>
+          <a href="/" className="text-white  hover:bg-blue-500 px-3 py-2 rounded-md text-sm font-medium">Services</a>
         </div>
         <div className="flex-shrink-0" >
           <Button text="Get in Touch" path="#" />
