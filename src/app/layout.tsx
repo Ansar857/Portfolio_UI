@@ -1,48 +1,29 @@
-'use client'
-import Head from 'next/head';
+"use client"
 import Header from './Components/widgets/Header';
+import './globals.css';
 import { useEffect } from 'react';
 import { initHotjar } from './Components/Hotjar';
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     initHotjar();
-    // Initialize Leadfeeder
-    const leadfeederScript = document.createElement('script');
-    leadfeederScript.innerHTML = `
-      (function(ss,ex){
-        window.ldfdr=window.ldfdr||function(){(ldfdr._q=ldfdr._q||[]).push([].slice.call(arguments));};
-        (function(d,s){
-          fs=d.getElementsByTagName(s)[0];
-          function ce(src){
-            var cs=d.createElement(s);
-            cs.src=src;
-            cs.async=1;
-            fs.parentNode.insertBefore(cs,fs);
-          };
-          ce('https://sc.lfeeder.com/lftracker_v1_'+ss+(ex?'_'+ex:'')+'.js');
-        })(document,'script');
-      })('bElvO730vrb4ZMqj');
-    `;
-    document.head.appendChild(leadfeederScript);
 
-    return () => {
-      // Cleanup
-      document.head.removeChild(leadfeederScript);
-    };
+    // Add Leadfeeder script within useEffect (optional for potential async execution)
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://sc.lfeeder.com/lftracker_v1_bElvO730vrb4ZMqj.js'; // Assuming your site ID is 'bElvO730vrb4ZMqj'
+    document.head.appendChild(script);
   }, []);
 
   return (
-    <div>
-      <Head>
-        {/* Add any other head elements here */}
-      </Head>
-      <Header />
-      {children}
-    </div>
+    <html lang="en">
+      <head>
+        {/* Other head elements, if any */}
+      </head>
+      <body>
+        <Header />
+        {children}
+      </body>
+    </html>
   );
 }
