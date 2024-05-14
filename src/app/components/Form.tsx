@@ -5,11 +5,14 @@ import {
   Input,
   Button,
 } from "@chakra-ui/react";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 type Form = {
   [x: string]: string;
 };
+
+
+
 
 const Form: React.FC = () => {
   const [form, setForm] = useState({
@@ -18,6 +21,9 @@ const Form: React.FC = () => {
     password: "",
     confirmPassword: "",
   });
+  
+
+
 
   const [error, setError] = useState({
     name: null, email: null, phone: null, password: null }
@@ -63,7 +69,7 @@ const Form: React.FC = () => {
         <FormLabel>
           User Name
           <Input
-            border={error ? "1px solid red" : "0.5px solid #D3D3D3"}
+            border={ "0.5px solid #D3D3D3"}
             _focus={{ border: 'none', boxShadow: "none" }}
             onChange={HandleInputChange}
             _hover={{}}
@@ -71,14 +77,14 @@ const Form: React.FC = () => {
             type="Text"
             name="username"
           />
-          {error&&<Box color={'red'}>Username is Required</Box>}
+          {/* {error&&<Box color={'red'}>Username is Required</Box>} */}
 
         </FormLabel>
 
         <FormLabel>
           Email address
           <Input
-            border={error ? "1px solid red" : "0.5px solid #D3D3D3"}
+            border={  "0.5px solid #D3D3D3"}
             _focus={{ border: 'none', boxShadow: "none" }}
             _hover={{}}
             type="Text"
@@ -86,7 +92,7 @@ const Form: React.FC = () => {
             onChange={HandleInputChange}
             value={form.email}
           />
-          {error&&<Box color={'red'}>Email is Required</Box>}
+          {/* {error&&<Box color={'red'}>Email is Required</Box>} */}
         </FormLabel>
 
         <FormLabel>
