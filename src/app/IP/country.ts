@@ -1,5 +1,5 @@
 export const  awsRegionsData = {
-    
+        // "Select a country":{region: "", countryCode: "" },
         "Afghanistan": { region: "ap-south-1", countryCode: "AF" },
         "Albania": { region: "eu-central-1", countryCode: "AL" },
         "Algeria": { region: "eu-west-1", countryCode: "DZ" },
