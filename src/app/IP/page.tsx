@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { awsRegionsData } from "./country";
+import { awsRegionsData ,timezoneData } from "./country";
 import { Box, Center, Image, Select } from "@chakra-ui/react";
 
 interface CountryData {
@@ -44,6 +44,20 @@ const FlagDisplay: React.FC = () => {
       const flag = `https://flagcdn.com/48x36/${countryData.country.toLowerCase()}.png`;
       setFlagURL(flag);
       // setCountryName(countryData.country);
+
+      const count = Object.keys(timezoneData) 
+      const value = Object.values(timezoneData)
+      // const ind = value.findIndex(entry => entry. === "CA");
+      console.log('timezones ', count[20]) 
+      console.log('countries ', value)
+
+
+
+
+      const country = Object.keys(awsRegionsData) 
+      const values = Object.values(awsRegionsData)
+      const index = values.findIndex(entry => entry.countryCode === "CA");
+      console.log('values ', country[index]) 
       const res = await fetch(
         `https://restcountries.com/v3.1/name/${countryData.country}`
       );

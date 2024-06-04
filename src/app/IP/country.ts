@@ -76,3 +76,139 @@ export const  awsRegionsData = {
     }
 //   console.log(awsRegions);
   
+export const timezoneData = {
+	"(UTC-12:00) International Date Line West": [
+	  "United States Minor Outlying Islands", 
+	  "Baker Island", 
+	  "Howland Island"
+	],
+	"(UTC-11:00) Samoa Standard Time": [
+	  "American Samoa", 
+	  "Niue", 
+	  "Midway Atoll"
+	],
+	"(UTC-10:00) Hawaii-Aleutian Standard Time": [
+	  "Hawaii", 
+	  "French Polynesia", 
+	  "Cook Islands"
+	],
+	"(UTC-9:00) Alaska Standard Time": [
+	  "Alaska", 
+	  "Gambier Islands", 
+	  "Marquesas Islands"
+	],
+	"(UTC-8:00) Pacific Standard Time": [
+	  "Pacific Time Zone", 
+	  "British Columbia", 
+	  "Baja California"
+	],
+	"(UTC-7:00) Mountain Standard Time": [
+	  "Mountain Time Zone", 
+	  "Arizona", 
+	  "Chihuahua"
+	],
+	"(UTC-6:00) Central Standard Time": [
+	  "Central Time Zone", 
+	  "Mexico City", 
+	  "Costa Rica"
+	],
+	"(UTC-5:00) Eastern Standard Time": [
+	  "Eastern Time Zone", 
+	  "New York", 
+	  "Toronto"
+	],
+	"(UTC-4:00) Atlantic Standard Time": [
+	  "Atlantic Time Zone", 
+	  "Puerto Rico", 
+	  "Barbados"
+	],
+	"(UTC-3:00) Atlantic Daylight Time": [
+	  "Greenland", 
+	  "Argentina", 
+	  "Uruguay"
+	],
+	"(UTC-2:00) Fernando de Noronha Time": [
+	  "Fernando de Noronha", 
+	  "South Georgia and the South Sandwich Islands", 
+	  "Trindade and Martim Vaz"
+	],
+	"(UTC-1:00) Azores Time": [
+	  "Cape Verde", 
+	  "Azores", 
+	  "Eastern Greenland"
+	],
+	"(UTC+0:00) Coordinated Universal Time": [
+	  "Iceland", 
+	  "Ghana", 
+	  "Ivory Coast"
+	],
+	"(UTC+1:00) Central European Time": [
+	  "France", 
+	  "Germany", 
+	  "Italy"
+	],
+	"(UTC+2:00) Eastern European Time": [
+	  "Greece", 
+	  "Egypt", 
+	  "Finland"
+	],
+	"(UTC+3:00) Moscow Standard Time": [
+	  "Russia", 
+	  "Saudi Arabia", 
+	  "Kenya"
+	],
+	"(UTC+4:00) Arabian Standard Time": [
+	  "United Arab Emirates", 
+	  "Mauritius", 
+	  "Oman"
+	],
+	"(UTC+5:00) Pakistan Standard Time": [
+	  "Pakistan", 
+	  "Maldives", 
+	  "Uzbekistan"
+	],
+	"(UTC+6:00) Bangladesh Standard Time": [
+	  "Bangladesh", 
+	  "Bhutan", 
+	  "Myanmar"
+	],
+	"(UTC+7:00) Indochina Time": [
+		"Thailand", 
+		"Vietnam", 
+		"Cambodia"
+	  ],
+	  "(UTC+8:00) China Standard Time": [
+		"China", 
+		"Singapore", 
+		"Australia"
+	  ],
+	  "(UTC+9:00) Japan Standard Time": [
+		"Japan", 
+		"South Korea", 
+		"North Korea"
+	  ],
+	  "(UTC+10:00) Australian Eastern Standard Time": [
+		"Australia", 
+		"Papua New Guinea", 
+		"Guam"
+	  ],
+	  "(UTC+11:00) Norfolk Island Time": [
+		"New Caledonia", 
+		"Solomon Islands", 
+		"Vanuatu"
+	  ],
+	  "(UTC+12:00) New Zealand Standard Time": [
+		"New Zealand", 
+		"Fiji", 
+		"Tuvalu"
+	  ],
+	  "(UTC+13:00) Samoa Standard Time": [
+		"Samoa", 
+		"Tokelau", 
+		"Kingdom of Tonga"
+	  ],
+	  "(UTC+14:00) Line Islands Time": [
+		"Kiribati", 
+		"United States Minor Outlying Islands"
+	  ]
+  };
