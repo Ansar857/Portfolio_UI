@@ -11,6 +11,8 @@ import Easy_process from "./Components/widgets/Easy_process"
 import Small_track from "./Components/widgets/Small_track"
 import { useEffect } from 'react'
 import { initHotjar } from "./Components/Hotjar"
+import {Typeform} from "./Components/Typeform"
+import Storylane from "./Components/StoryLane"
 
 
 const Page = () => {
@@ -23,7 +25,7 @@ const Page = () => {
     <div  className=""  >
       {/* <Image src = {bg} alt = "Metaverse"/> */}
 
-      <Hero/>
+      {/* <Hero/>
       <Small_track/>
       <Design01/>
       <Remote02/>
@@ -32,7 +34,9 @@ const Page = () => {
       <Services/>
       <Team_profiles/>
       <Data/>
-      <Footer/>
+      <Footer/> */}
+      {/* <Typeform/> */}
+      {/* <Storylane/> */}
   
     </div>
   )

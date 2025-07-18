@@ -21,7 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* Other head elements, if any */}
       </head>
       <body>
-        <Header />
+        {/* <Header /> */}
         {children}
       </body>
     </html>
